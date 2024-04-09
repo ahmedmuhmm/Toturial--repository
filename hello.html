@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+   <head>
+      <title>Hello!</title>
+      <!-- Responsive Desige: is how you make your web page fit on othor devices
+      like mobiles and so forth, and here is the line os code that would enable
+      you to do just that: -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <!-- i can attach the style of Css to the html element as its
+        attribute like this for instance <h1  style="color: springgreen; text-align: center;">
+         or :
+        -and this is argublly better- put it in the head section like
+        the following:  -->
+      <!--
+      <style>
+        h1 {
+            color: springgreen;
+            text-align: center;
+        }
+      </style>
+       -->
+      <!-- a better design could be to have an entirely different file
+       that contains all the Css style for my html page -->
+
+       <!-- this is a sass file, sass is a language that's concidered to be an extension to css. you need to remove the "s" and you need to type this command in the terminal "sass hello.scss:hello.css"-->
+       <!-- <link rel="stylesheet" href="hello.scss"> -->
+
+       <!-- this the bootsrap link to get started with bootsrap. -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </head>
+
+   <!-- if you want to style the whole body you can attatch
+   the styling prperties to the body tag as its attributs -->
+   <body id="body">
+      <h1>Hello, There...Welcome to My Web Page!</h1>
+      
+      <ol>
+        <li>first item</li>
+        <ul>
+            <li>element 1</li>
+            <li>element 2</li>
+            <li>element 3</li>
+        </ul>
+        <li>secode item</li>
+        <li>third item</li>
+      </ol>
+
+      <hr>
+
+      <ol class="styletheOLandtheA">
+        <li><a href="https://google.com" class="styletheOLandtheA">Google</a></li>
+        <li><a href="https://facebook.com" class="styletheOLandtheA">Facebook</li>
+        <li><a href="https://amazon.com" class="styletheOLandtheA">Amazon</a></li>
+      </ol>
+
+      <div>
+        <img src="Profile Photo.jpg" alt="Ahmed" width="400">
+
+      </div>
+
+      <br>
+      <hr>
+
+      <div>
+        <a href="https://google.com" class="styletheOLandtheA">Go to Google</a>
+
+        <br>
+        <hr>
+
+        <!-- this is how to link to a different page on the same website: -->
+        <a href="afternoon-image.html" class="styletheOLandtheA">My afternoon image</a>
+      </div>
+
+      <br>
+      <hr>
+
+      <button id="button">Click here</button>
+
+      <br>
+      <hr>
+
+      <!-- how to design a table using only html tags: -->
+      <table>
+        <thead>
+            <tr>
+                <th>Ocean:</th>
+                <th>Averge depth:</th>
+                <th>Maximum depth:</th>
+            </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Pacific Ocean</td>
+            <td>4.280 m</td>
+            <td>10.911</td>
+          </tr>
+          <tr>
+            <td>Atlantic Ocean</td>
+            <td>3.646</td>
+            <td>8.486</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <hr>
+
+      <!-- this is how to creat a form in html: -->
+
+        <form>
+            <div>
+                <input type="text" placeholder="Full Name" name="name">
+            </div>
+
+            <br>
+
+             <!-- we also have othor types of input in addition to the text input: -->
+             <!-- a tag means a divsion or a section of the web page -->
+            <div>
+                <input name="password" type="password" placeholder="Password">
+            </div>
+
+            <br>
+
+            <input type="Submit">
+        </form>
+
+
+        <br>
+        <hr>
+
+        <div>
+            What's your Favorite Color?
+            <input name="color" type="radio" value="red">Red
+            <input name="color" type="radio" value="green">Green
+            <input name="color" type="radio" value="blue">Blue
+            <input name="color" type="radio" value="othor">Othor
+        </div>
+
+
+        <br>
+        <hr>
+
+
+        <!-- creating a list of countries (for example) and havinfg the user
+        choosing from them what are they from? -->
+
+        <input name="country" list="countries" placeholder="Country">
+        <datalist id="countries">
+            <option value="The US">
+            <option value="The UK">
+            <option value="UAE">
+            <option value="Sudan">
+        </datalist>
+
+        <br>
+        <hr>
+         <!-- what's below is called flexbox layout: -->
+        <div id="container">
+          <div> 1. This is some sample text inside of a div to demo flexbox</div>
+          <div>2. This is some sample text inside of a div to demo flexbox</div>
+          <div>3. This is some sample text inside of a div to demo flexbox</div>
+          <div>4. This is some sample text inside of a div to demo flexbox</div>
+          <div>5. This is some sample text inside of a div to demo flexbox</div>
+          <div>6. This is some sample text inside of a div to demo flexbox</div>
+          <div>7. This is some sample text inside of a div to demo flexbox</div>
+          <div>8. This is some sample text inside of a div to demo flexbox</div>
+          <div>9. This is some sample text inside of a div to demo flexbox</div>
+          <div>10. This is some sample text inside of a div to demo flexbox</div>
+          <div>11. This is some sample text inside of a div to demo flexbox</div>
+          <div>12. This is some sample text inside of a div to demo flexbox</div>
+        </div>
+
+
+        <!-- this is how you layout a grid: -->
+        <div id="grid">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+          <div class="grid-item">9</div>
+          <div class="grid-item">10</div>
+          <div class="grid-item">11</div>
+          <div class="grid-item">12</div>
+        </div>
+        <div class="alert alert-danger" role="alert">
+          This is an alert!
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-3">This is a section</div>
+            <div class="col-3">This ia a second section</div>
+            <div class="col-3">This ia a third section</div>
+            <div class="col-3">This ia a forth section</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-3">This is a section</div>
+            <div class="col-6">This ia a second section</div>
+            <div class="col-3">This ia a third section</div>
+          </div>
+        </div>
+
+        <!-- bootstrap columns are also mobile responsive  and here is an example:-->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">This is a section</div>
+            <div class="col-lg-3 col-sm-6">This ia a second section</div>
+            <div class="col-lg-3 col-sm-6">This ia a third section</div>
+            <div class="col-lg-3 col-sm-6">This ia a forth section</div>
+          </div>
+        </div>
+
+
+
+   </body>
+
+
+</html>
